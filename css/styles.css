@@ -1,0 +1,12 @@
+
+.mainHeader {
+  background: linear-gradient(to top, #fceabb, #f8b500);
+  height: 200px;
+}
+.mainTitle {
+  font-size: 50px;
+  color: whitesmoke;
+  font-family: 'Merienda One', cursive;
+  text-align: center;
+  padding-top: 50px;
+}
