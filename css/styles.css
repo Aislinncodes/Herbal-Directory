@@ -9,7 +9,7 @@
   height: 200px; 
   border-radius: 40%;
   border: 1px solid #6bbaa7;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 .mainTitle {
   font-size: 50px;
@@ -19,4 +19,18 @@
   font-size: 1.2rem;
   text-align: center;
   padding-top: 30px;
+  padding-left: -150px;
+}
+
+.navbar {
+  margin-top: -5%;
+  margin-left: 212px;
+  border-radius: 10%;
+}
+.navbar-custom {
+  
+  background-color: linear-gradient(to right bottom, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #f5ebde, #eee6d4, #e6e1cb, #cfd7b9, #b3cdac, #91c4a6, #6bbaa7);
+}
+.navbar-brand {
+  color: #6bbaa7;
 }
