@@ -7,101 +7,141 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Montez&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Merienda&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <title>Herbal Directory</title>
 </head>
 <body>
+  
   <header>
-    <div class="container-fluid">
-      <div class="mainHeader row d-flex">
-        <div class="col col-md-2">
-          <img src="/img/newlogo.png" class="logo" alt="Logo of hand with flower">
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">The Herbal Directory</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Herbal Knowledge
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">A-Z Index</a>
+                <a class="dropdown-item" href="#">Herbal Remedies & More!</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">References</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-        <div class="mainTitle col">Materia Medica <br>for Beauty & Wellness</div>
-       
+      </nav>
+    </div>
+  
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <h6>Find Herbal Knowledge Here @</h6>
+          <h1>The Herbal Directory</h1>
+          <p>Intro for Website Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos pariatur voluptates iusto libero vel, mollitia corrupti blanditiis minima, nihil, exercitationem sint consectetur officia sequi quidem esse suscipit totam nemo fuga.
+         </p>
+         <button class="btn btn-success px-5 py-1">Click Here for Herbal Index</button>
+        </div>
+        <div class="col-md-5">
+          <img src="/img/purplefloweryellowbackground.jpg" class="main-img" alt="purple flowers yellow background">
+        </div>
       </div>
-    </div> 
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              A-Z index
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">A</a>
-              <a class="dropdown-item" href="#">B</a>
-              <a class="dropdown-item" href="#">C</a>
-              <a class="dropdown-item" href="#">D</a>
-              <a class="dropdown-item" href="#">E</a>
-              <a class="dropdown-item" href="#">F</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">G</a>
-              <a class="dropdown-item" href="#">H</a>
-              <a class="dropdown-item" href="#">I</a>
-              <a class="dropdown-item" href="#">J</a>
-              <a class="dropdown-item" href="#">K</a>
-              <a class="dropdown-item" href="#">L</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">M</a>
-              <a class="dropdown-item" href="#">N</a>
-              <a class="dropdown-item" href="#">O</a>
-              <a class="dropdown-item" href="#">P</a>
-              <a class="dropdown-item" href="#">Q</a>
-              <a class="dropdown-item" href="#">R</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">S</a>
-              <a class="dropdown-item" href="#">T</a>
-              <a class="dropdown-item" href="#">U</a>
-              <a class="dropdown-item" href="#">V</a>
-              <a class="dropdown-item" href="#">W</a>
-              <a class="dropdown-item" href="#">X</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Y</a>
-              <a class="dropdown-item" href="#">Z</a>
-
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav> 
+    </div>
   </header>
-  
-  
-  <main></main>
+  <hr>
+  <main>
+  <section class="section-1">
+     <div class="container text-center">
+       <div class="row">
+         <div class="col-md-6">
+           <div class="sunflower">
+             <img src="/img/sunflower.jfif" alt="sunflower">
+           </div>
+         </div>
+         <div class="col-md-6">
+           <div class="panel text-left">
+              <h1>Herb of the Month: Sunflowers</h1>
+              <p class="pt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam neque alias adipisci inventore ad quis optio cupiditate minima expedita.</p>
+           </div>
+         </div>
+       </div>
+     </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-4">
+          <div class="card w-auto bg-success text-white">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbal Knowledge</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <div class="card w-auto bg-success text-white">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Herbal Remedies</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-4">
+          <div class="card w-auto bg-success text-white">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Shop Herbal Products</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-warning">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+
+
+
 
   
-  
-  
-  
-  
-  
-  
-  <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
 </html>

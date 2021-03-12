@@ -1,35 +1,38 @@
-
-.mainHeader {
-  background-image: linear-gradient(to right bottom, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #f5ebde, #eee6d4, #e6e1cb, #cfd7b9, #b3cdac, #91c4a6, #6bbaa7);
-  height: 180px;
-
+.main-img {
+  height: 400px;
+  border-radius: 50%;
 }
 
-.logo {
-  height: 200px; 
-  border-radius: 40%;
+.main-header {
+  background-color: #f8ef42;
+  background-image: linear-gradient(315deg, #f8ef42 0%, #0fd64f 74%);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+flex-direction: row;
+}
+
+
+.main-logo {
+  width: auto;
+  border-radius: 30%;
   border: 1px solid #6bbaa7;
-  margin-top: 50px;
+  margin-top: -20px;
 }
 .mainTitle {
   font-size: 50px;
-  color: #6bbaa7;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
+  color: whitesmoke;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: -150px;
 }
 
-.navbar {
-  margin-top: -5%;
-  margin-left: 212px;
-  border-radius: 10%;
-}
 .navbar-custom {
   
-  background-color: linear-gradient(to right bottom, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #faf1e8, #f5ebde, #eee6d4, #e6e1cb, #cfd7b9, #b3cdac, #91c4a6, #6bbaa7);
+  border-radius: 5%;
 }
 .navbar-brand {
   color: #6bbaa7;
