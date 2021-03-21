@@ -9,11 +9,13 @@
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700&family=Dosis:wght@300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <title>About Us</title>
 </head>
 <body>
+  <header>
   <nav class="navbar navbar-expand-lg navbar-custom">
     <a class="navbar-brand" href="/index.html">Materia Medica for Hair&Skin Care</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +51,57 @@
       <button class="btn" type="submit">Sign In</button>
     </div>
   </nav>
+
+
+  <!--modal-->
+  <div id="signinModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="signinEmail">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="signinEmail" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="signinPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="signinPassword" placeholder="Enter Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label> 
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--jumbotron with herbal index text-->
+ <div class="jumbotron text-center main-feature">
+  <div class="main-text">
+    <h2>About Us</h2>
+    <a href="/A-Zindex.html" class="btn btn-index btn-lg">Click Here for our Directory</a>
+  </div>
+</div>
+</header>
   
+
+  <!-- About Us-->
   Due to the current beauty industry, many consumers are concerned with the chemicals and additives used in mainstream beauty products. This concern has resulted in an increase of growing small businesses dedicated to offering clean and natural beauty products. Though this solution is a positive sometimes these beauty lines can be expensive for most people. This is when do-it-yourself comes into play. 
   Thanks to platforms like Youtube and Google we can learn how to make our own products, but sometimes it can be a bit daunting because the information is so scattered. People are saying so many different things - does oil actually moisturize hair? Or does it only seal moisture? Does henna actually contain protein that can bind hair follicles? Or should I just trim my ends?
 
@@ -72,7 +124,6 @@
 </div>
 </div>
 </div>
-</header>
 
 
 <!-- cards with featured site pages-->
@@ -92,5 +143,33 @@
     <div class="col-md-4"></div>
   </div>
 </div>
+
+<!--Footer-->
+<footer class="site-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-4 col-sm-2 offset-1"> 
+              <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li><a href="#">Sites</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+              <h5>Social</h5>
+                  <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i> </a>
+                  <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i> </a>
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i> </a>
+          </div>
+          <div class="col-sm-4 text-center">
+              <a role="button" class="btn btn-link" href="tel:+8578527589">Call</a><i class="fas fa-mobile-alt"></i> 1-206-555-1234<br />
+              <a role="button" class="btn btn-link" href="mailto:mmhairandskin@herbal.co">Email</a><i class="fas fa-envelope-open-text"></i> mmhairandskin@herbal.co
+          </div>
+      </div>
+  </div>
+</footer>
 </body>
 </html>

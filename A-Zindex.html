@@ -9,7 +9,8 @@
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700&family=Dosis:wght@300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 
   <title>Herbal Directory</title>
@@ -27,10 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
+            <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Herbal Index</a>
+            <a class="nav-link" href="/A-Zindex.html">Herbal Index</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">D.I.Y. Recipes</a>
@@ -51,67 +52,62 @@
         <button class="btn" type="submit">Sign In</button>
       </div>
     </nav>
-  </header>
+  
+  
+    <!--modal-->
+    <div id="signinModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="signinEmail">Email address</label>
+                                  <input type="email" class="form-control form-control-sm" id="signinEmail" placeholder="Enter Email">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="signinPassword">Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="signinPassword" placeholder="Enter Password">
+                              </div>
+                              <div class="col">
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label">Remember me</label> 
+                                  </div>
+                              </div>
+                          </div>    
+                          <div class="form-row">
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
-  <!--herbal carousel-->
-  <div class="container">
-    <div class="row row-content">
-        <div class="col-md-8 mx-auto">
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
-                    <li data-target="#homeCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-50 mx-auto" src="/img/green-orange-whitebackground.jpg" alt="green and orange"/>
-                        <div class="carousel-caption">
-                            <h3>Henna Powder</h3>
-                            <p class="d-none d-sm-block">Henna for binding hair protein.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/herbs-in-spoons.jpg" alt="React Lake Campground"/>
-                        <div class="carousel-caption">
-                            <h3>Herbs In Spoons</h3>
-                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/loverna-journey-5p83zEQlJV0-unsplash.jpg" alt="Chrome River Campground"/>
-                        <div class="carousel-caption">
-                            <h3>Chrome River Campground</h3>
-                            <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Next</span>
-                </a>  
-                <button class="btn btn-danger btn-sm" id="carouselButton">
-                      <i class="fa fa-pause"></i>
-                </button>
-                  
-              </div>  
-            </div>
-        </div>
+  <!--jumbotron with herbal index text-->
+  <div class="jumbotron text-center main-feature">
+    <div class="main-text">
+      <h2>Herbal Index</h2>
+      <a href="/A-Zindex.html" class="btn btn-index btn-lg">Click Here for our Directory</a>
     </div>
-
+  </div>
+  </header>
   
   <!--AZ index-->
     <div class="container text-center my-5 mt-5 pt-5">
       <div class="row">
         <h3>Browse alphabetically:</h3>
        <div class="col azindex">
-         <a href="" class="">A</a>
-         <a href="" class="">B</a>
+         <a href="" class="" id="letterA">A</a>
+         <a href="" class="" id="letterB">B</a>
          <a href="" class="">C</a>
          <a href="" class="">D</a>
          <a href="" class="">E</a>
@@ -140,37 +136,95 @@
        </div>
       </div>
     </div>
-    <div class="div container">
-      <h1>A</h1>
-      <hr>
-      <div class="row">
-        <div class="col col-md-4">
-      <div class="div"><h4>Acacia</h4>
-      <img src="/img/acaciasenegal.jfif" class="indexpic"></div>
-        </div>
-        <div class="col col-md-8">
-          <ul>
-          <li>Common Names
-          Acacia , Gum Arabic, Cassie flower, Catechu, Egyptian thorn</li>
-          <li>Botanical Name
-          Acacia senegal</li>
-          </ul>
+    <!--A through Z index using card decks-->
+    <!--"A" card deck-->
+    <h2 class="text-center index-letter my-5" id="letterA">A</h2>
+    <div class="card-deck">
+      <div class="card">
+        <img src="/img/aloevera.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Aloe Vera</h5>
+          <p class="card-text px-3">
+            Aloe is about 99% water, the remaining 1% is extremely powerful and it is thought this is because the close to 100 ingredients work extremely well together (synergistically). Aloe vera contains many minerals vital to the growth process and healthy function of all the body's systems. The ingredients in Aloe can be grouped into the following categories: Vitamins, Minerals, Sugars, Enzymes, Lignins, Amino Acids, Anthraquinones, Saponins, Fatty Acids, Salicylic Acid
+          </p>
+          <p class="card-text"><small class="text-muted"><a href="https://www.herbwisdom.com/herb-aloe-vera.html">Learn more about Aloe Vera </a></small></p>
         </div>
       </div>
-      <div class="row">
-        <div class="col col-md-4">
-      <div class="div"><h4>Acai Berry</h4>
-      <img src="/img/acaiberry.jfif" class="indexpic"></div>
+      <div class="card">
+        <img src="/img/acv.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Apple Cider Vinegar</h5>
+          <p class="card-text">Also known as ACV, Proponents of Apple Cider Vinegar (ACV) believe it can cure high cholesterol, diabetes, acne, sore throats and heart burn. It is also taken as a weight loss aid. Apple cider vinegar is created by fermenting regular apple cider. Bacteria work to break down the sugars and yeast. It transforms the broken-down sugars and yeast first into alcohol and then into vinegar.</p>
+          <p class="card-text"><small class="text-muted"> <a href="https://www.herbwisdom.com/herb-apple-cider-vinegar.html">Learn more about ACV</a></small></p>
         </div>
-        <div class="col col-md-8">
-          <ul>
-          <li>Common Names
-            Acai Berry , Acai Berry, jussara, Açaí</li>
-          <li>Botanical Name
-            Euterpe oleracea</li>
-          </ul>
+      </div>
+      <div class="card">
+        <img src="/img/avocado1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Avocado</h5>
+          <p class="card-text">Avocados are packed with antioxidants. These antioxidants help protect against free radical damage. Free radicals are compounds that have can speed up the aging process. Avocados also help provide nourishment for the skin and give it a healthy glow. That is why avocado oil is found in many cosmetics.</p>
+          <p class="card-text"><small class="text-muted"> <a href="https://www.herbwisdom.com/herb-avocado.html">Learn more about Avocado</a></small></p>
         </div>
       </div>
     </div>
+
+    <!--"B" card deck-->
+    <h2 class="text-center index-letter my-5" id="letterB">B</h2>
+    <div class="card-deck">
+      <div class="card">
+        <img src="/img/aloevera.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Basil</h5>
+          <p class="card-text px-3">
+            Basil (Ocimum basilicum) is a popular kitchen herb used for flavouring food. It is also widely regarded for its health-enhancing properties. Basil has been a staple of medicine for generations and the herb has been used to treat a variety of different conditions, from inflammation to bug bites.
+          </p>
+          <p class="card-text"><small class="text-muted"><a href="https://www.herbwisdom.com/herb-basil.html">Learn more about Basil </a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/acv.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Biotin</h5>
+          <p class="card-text">Biotin is also known as Vitamin B7 or Vitamin H, and is classified as a water soluble vitamin. It occurs in a wide variety of foods such as egg yolk, liver and some cereals. The vitamin is also synthesized by bacteria found in the human gut. It is considered readily available and therefore Biotin deficiency rarely occurs unless for individuals who are severely malnourished, and sometimes late on in pregnancy. There are also intestinal conditions that can make Biotin unavailable for use by inhibiting its absorption in the digestive tract.</p>
+          <p class="card-text"><small class="text-muted"> <a href="https://www.herbwisdom.com/herb-biotin.html">Learn more about Biotin</a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img/avocado1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Burdock Root</h5>
+          <p class="card-text">The burdock is also known by many other names, most having to do with the characteristics of the seeds or traditional herbal uses; beggar's buttons, love leaves, clot-bur. Herbalists and others have long known that burdock is often used as a dietary aid to help cure different ailments such as sore throats, colds, blood purifiers, to combat hair loss and dandruff, to name a few. It also increases the flow of urine and is used as a tonic in mild doses and will increase sweating to remove toxins from the body.</p>
+          <p class="card-text"><small class="text-muted"> <a href="https://www.herbwisdom.com/herb-burdock.html">Learn more about Burdock Root</a></small></p>
+        </div>
+      </div>
+    </div>
+    
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-4 col-sm-2 offset-1"> 
+                  <h5>Links</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="/about.html">About</a></li>
+                          <li><a href="#">Sites</a></li>
+                          <li><a href="#">Contact</a></li>
+                      </ul>
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                  <h5>Social</h5>
+                      <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i> </a>
+                      <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i> </a>
+                      <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                      <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i> </a>
+              </div>
+              <div class="col-sm-4 text-center">
+                  <a role="button" class="btn btn-link" href="tel:+8578527589">Call</a><i class="fas fa-mobile-alt"></i> 1-206-555-1234<br />
+                  <a role="button" class="btn btn-link" href="mailto:mmhairandskin@herbal.co">Email</a><i class="fas fa-envelope-open-text"></i> mmhairandskin@herbal.co
+              </div>
+          </div>
+      </div>
+    </footer>
 </body>
 </html>

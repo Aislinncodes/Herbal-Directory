@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
   
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 header p, button {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 500;
 }
 
@@ -27,6 +27,22 @@ h1{
   border-radius: 0;
   border: 5px solid #DDAF94;
   opacity: 70%;
+}
+
+.intro {
+  padding-top: 100px;
+}
+.main-feature {
+  height: 300px;
+}
+.main-feature h2 {
+  margin-top: -200px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  line-height: 1.5;
+  font: bold;
+  font-weight: 500;
+  color: #24140b;
 }
 
 .jumbotron h1 {
@@ -137,10 +153,19 @@ footer a:hover {
   border: 3px solid #DDAF94;
 }
 
+.main-feature {
+
+}
+
 .azindex a {
    padding: 0 6.7px 5px;
-   color: blanchedalmond;
-   border-right: 1px solid #f8ef42;
+   color: #266150;
+   border-right: 1px dotted #DDAF94;
+ }
+
+ .azindex a:hover {
+   text-decoration: none;
+   font-size: 1.3rem;
  }
 
 .indexpic {
