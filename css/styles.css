@@ -20,7 +20,7 @@ h1{
 
 .jumbotron {
   background-image: linear-gradient(rgba(250, 188, 131, 0.658), rgba(233, 172, 122, 0.247)), url('../img/Mainherbalimage.jpg');
-  height: 80vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   color: #266150;
@@ -30,8 +30,18 @@ h1{
 }
 
 .intro {
-  padding-top: 100px;
+  padding-top: 50px;
 }
+.intro a {
+  text-decoration: none;
+  color: #266150;
+}
+.intro img {
+  height: 400px;
+  border-radius: 40px;
+  border: 3px solid #DDAF94;
+}
+
 .main-feature {
   height: 300px;
 }
@@ -57,13 +67,9 @@ h1{
 }
 
 .main-text {
-  margin-top: 200px;
+  margin-top: 80px;
 }
-.intro a {
-  text-decoration: none;
-  color: #266150;
-  font-family: ;
-}
+
 .navbar{
   padding: .2rem 7rem;
   color: #266150;
@@ -102,12 +108,12 @@ h1{
 
 .btn:hover {
   color: #FDF8F5;
-  font-size: 0.8rem;
   border: 1px inset;
 }
 
 .btn-index {
   color: #24140b;
+  margin-top: -30px;
   padding: 10px 30px;
   background-color: #DDAF94;
   border: 5px solid;
@@ -115,7 +121,6 @@ h1{
 
 .btn:hover {
   padding: 5px 15px;
-  font-size: 1rem;
   border: 5px inset;
 }
 
@@ -139,12 +144,6 @@ footer a:hover {
   color: #FDF8F5;
 }
 
-.section-1 img {
-  height: 400px;
-  width: 450px;
-  border-radius: 40px;
-  border: 3px solid #DDAF94;
-}
 
 
 #carouselExampleControls > div > div:nth-child(n) > img {
@@ -153,9 +152,6 @@ footer a:hover {
   border: 3px solid #DDAF94;
 }
 
-.main-feature {
-
-}
 
 .azindex a {
    padding: 0 6.7px 5px;
@@ -171,4 +167,12 @@ footer a:hover {
 .indexpic {
   margin-top: 10px;
   border-radius: 20%;
+}
+
+.divider {
+  width: 100%;
+  height: 5px;
+  background-color: #DDAF94;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }

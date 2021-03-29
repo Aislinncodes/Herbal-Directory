@@ -1,180 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/d439dd2e01.js" crossorigin="anonymous"></script>
-  
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700&family=Dosis:wght@300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700&family=Dosis:wght@300;400;500;600;700&family=Oleo+Script:wght@400;700&family=Poiret+One&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <title>About Us</title>
 </head>
+
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" href="/index.html">Materia Medica for Hair&Skin Care</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="">
-        <i class="fas fa-bars"></i>
-      </span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/A-Zindex.html">Herbal Index</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">D.I.Y. Recipes</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            More
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Blog</a>
-            <a class="dropdown-item" href="#">Shop</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/contactus.html">Contact Us</a>
-          </div>
-        </li>
-        </li>
-      </ul>
-      <button class="btn" type="submit">Sign In</button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="/index.html">Materia Medica for Hair&Skin Care</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/A-Zindex.html">Herbal Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">D.I.Y. Recipes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Blog</a>
+              <a class="dropdown-item" href="#">Shop</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/contactus.html">Contact Us</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+        <button class="btn" type="submit">Sign In</button>
+      </div>
+    </nav>
 
 
-  <!--modal-->
-  <div id="signinModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
+    <!--modal-->
+    <div id="signinModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">Login</h3>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="signinEmail">Email address</label>
-                                <input type="email" class="form-control form-control-sm" id="signinEmail" placeholder="Enter Email">
-                            </div>
-                            <div class="form-group col-12">
-                                <label class="sr-only" for="signinPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm" id="signinPassword" placeholder="Enter Password">
-                            </div>
-                            <div class="col">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label">Remember me</label> 
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
-                        </div>
-                    </form>
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="signinEmail">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="signinEmail" placeholder="Enter Email">
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="signinPassword">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="signinPassword"
+                      placeholder="Enter Password">
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox">
+                      <label class="form-check-label">Remember me</label>
+                    </div>
+                  </div>
                 </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
- <!--jumbotron with herbal index text-->
- <div class="jumbotron text-center main-feature">
-  <div class="main-text">
-    <h2>About Us</h2>
-    <a href="/A-Zindex.html" class="btn btn-index btn-lg">Click Here for our Directory</a>
+    <!--jumbotron with herbal index text-->
+    <div class="jumbotron text-center">
+      <div class="main-text">
+        <h1>About Us</h1>
+        <a href="/A-Zindex.html" class="btn btn-index btn-lg">Click Here for our Directory</a>
+      </div>
+    </div>
+
+    <!--About us intro-->
+    <div class="container intro text-center">
+      <h3>Our Purpose</h3>
+      <p> Due to the current beauty industry, many consumers are concerned with the chemicals and additives used in
+        mainstream beauty products. This concern has resulted in an increase of growing small businesses dedicated to
+        offering clean and natural beauty products. Though this solution is a positive sometimes these beauty lines can
+        be expensive for most people. This is when do-it-yourself comes into play.
+        Thanks to platforms like Youtube and Google we can learn how to make our own products, but sometimes it can be a
+        bit daunting because the information is so scattered. People are saying so many different things - does oil
+        actually moisturize hair? Or does it only seal moisture? Does henna actually contain protein that can bind hair
+        follicles? Or should I just trim my ends?</p>
+    </div>
+
+    <!--Divider-->
+    <div class="container-fluid">
+      <div class="divider my-5"></div>
+    </div>
+    <!--About The Website continued-->
+    <div class="container intro text-center">
+      <h3>Why Are We Here?</h3>
+      <p>Materia Medica for Hair & Skin Care is designed to centralize herbal hair and skin care information. So you
+        don't have to search high and low for that great charcoal mask recipe. </p>
+    </div>
+  </header>
+  <!--Divider-->
+  <div class="container-fluid">
+    <div class="divider my-5"></div>
   </div>
-</div>
-</header>
+<!--Contact Form-->
+  
   
 
-  <!-- About Us-->
-  Due to the current beauty industry, many consumers are concerned with the chemicals and additives used in mainstream beauty products. This concern has resulted in an increase of growing small businesses dedicated to offering clean and natural beauty products. Though this solution is a positive sometimes these beauty lines can be expensive for most people. This is when do-it-yourself comes into play. 
-  Thanks to platforms like Youtube and Google we can learn how to make our own products, but sometimes it can be a bit daunting because the information is so scattered. People are saying so many different things - does oil actually moisturize hair? Or does it only seal moisture? Does henna actually contain protein that can bind hair follicles? Or should I just trim my ends?
+  
+  
 
-
-
-  <!--Herb of the Month-->
-
-<div class="container section-2">
-  <div class="row herb-of-month">
-    <div class="col-sm-12 col-md-5">
-  <img src="/img/marshmallow-root-and-flower.jpg" class="img-fluid" alt="marshmallow-root-and-flower">
-  </div>
-  <div class="col-sm-12 col-md-7">
-  <div class="herb-of-month">
-    <h3>Herb Of The Month:</h3>
-    <h4>Marshmallow Root</h4>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae harum ad suscipit qui non pariatur enim voluptatem nam! Esse, odit?
-      </p>
-  </div>
-</div>
-</div>
-</div>
-
-
-<!-- cards with featured site pages-->
-<div class="card-section">
-  <div class="row justify-content-center info-cards">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+  <!--Footer-->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-2 offset-1">
+          <h5>Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="#">Sites</a></li>
+            <li><a href="/contactus.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-5 text-center">
+          <h5>Social</h5>
+          <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i> </a>
+          <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i> </a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i> </a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a role="button" class="btn btn-link" href="tel:+8578527589">Call</a><i class="fas fa-mobile-alt"></i>
+          1-206-555-1234<br />
+          <a role="button" class="btn btn-link" href="mailto:mmhairandskin@herbal.co">Email</a><i
+            class="fas fa-envelope-open-text"></i> mmhairandskin@herbal.co
         </div>
       </div>
     </div>
-    <div class="col-md-4"></div>
-    <div class="col-md-4"></div>
-  </div>
-</div>
+  </footer>
 
-<!--Footer-->
-<footer class="site-footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-4 col-sm-2 offset-1"> 
-              <h5>Links</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="/index.html">Home</a></li>
-                      <li><a href="/about.html">About</a></li>
-                      <li><a href="#">Sites</a></li>
-                      <li><a href="/contactus.html">Contact</a></li>
-                  </ul>
-          </div>
-          <div class="col-6 col-sm-5 text-center">
-              <h5>Social</h5>
-                  <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i> </a>
-                  <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i> </a>
-                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                  <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i> </a>
-          </div>
-          <div class="col-sm-4 text-center">
-              <a role="button" class="btn btn-link" href="tel:+8578527589">Call</a><i class="fas fa-mobile-alt"></i> 1-206-555-1234<br />
-              <a role="button" class="btn btn-link" href="mailto:mmhairandskin@herbal.co">Email</a><i class="fas fa-envelope-open-text"></i> mmhairandskin@herbal.co
-          </div>
-      </div>
-  </div>
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
